@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.davejoyce.algo</groupId>
+    <artifactId>trieset-utf8</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <name>UTF-8 TrieSET</name>
+    <description>TrieSET implementation for UTF-8 subset of Unicode characters</description>
+
+    <licenses>
+        <license>
+            <name>BSD-2-Clause</name>
+            <url>https://opensource.org/licenses/BSD-2-Clause</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>davejoyce</id>
+            <name>Dave Joyce</name>
+            <email>dave@osframework.org</email>
+            <roles>
+                <role>project lead</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.javaVersion>1.8</project.build.javaVersion>
+
+        <!-- Dependency versions -->
+        <logback.version>1.2.3</logback.version>
+        <testng.version>6.14.3</testng.version>
+    </properties>
+
+    <dependencies>
+        <!-- Test dependencies -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
