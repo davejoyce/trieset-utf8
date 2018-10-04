@@ -21,9 +21,9 @@ Add this as a dependency to your `pom.xml` file
 
 ```xml
 <dependency>
-    <groupId>io.github.davejoyce.algo</groupId>
-    <artifactId>trieset-utf8</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <groupId>${project.groupId}</groupId>
+    <artifactId>${project.artifactId}</artifactId>
+    <version>${project.version}</version>
 </dependency>
 ```
 
@@ -32,7 +32,7 @@ Add this as a dependency to your `pom.xml` file
 Add this as a dependency to your `build.gradle` file
 
 ```gradle
-compile 'io.github.davejoyce.algo:trieset-utf8:0.0.1-SNAPSHOT'
+compile '${project.groupId}:${project.artifactId}:${project.version}'
 ```
 
 ## License
